@@ -69,8 +69,18 @@ def menu(request):
         'description': 'Говяжий суп,Курица по-тайски,Греческий салат,Дрожжевые булочки - 2 шт,Морс - 0,3,Финики',
         'price': 7500,
         'image': 'images/iftar3.png'
+    },
+    {
+        'name': 'Ифтар Сет №4',
+        'description': 'Говяжий суп,Курица по-тайски,Греческий салат,Дрожжевые булочки - 2 шт,Морс - 0,3,Финики',
+        'price': 7500,
+        'image': 'images/iftar3.png'
     }
 ]
+
+
+
+
 
     return render(request, 'menu.html', {
         'dishes': dishes,
