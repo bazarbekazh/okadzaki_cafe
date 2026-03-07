@@ -71,7 +71,7 @@ def menu(request):
         'image': 'images/iftar3.png'
     }]
 
-         pizza = [
+    pizza = [
     {
         'name': 'Наполи',
         'description': 'Пицца «Пепперони» (30 см), пицца «Маргарита» (30 см), пицца «Куриная в сливочном соусе» (30 см),Coca-cola(1 л.)',
