@@ -69,12 +69,33 @@ def menu(request):
         'description': 'Говяжий суп,Курица по-тайски,Греческий салат,Дрожжевые булочки - 2 шт,Морс - 0,3,Финики',
         'price': 7500,
         'image': 'images/iftar3.png'
+    }]
+
+         pizza = [
+    {
+        'name': 'Наполи',
+        'description': 'Пицца «Пепперони» (30 см), пицца «Маргарита» (30 см), пицца «Куриная в сливочном соусе» (30 см),Coca-cola(1 л.)',
+        'price': 8500,
+        'image': 'images/pizza1.png'
+    },
+     {
+        'name': 'Аризона',
+        'description': 'Пицца «Пепперони» (30 см), пицца «4 сезона» (30 см), пицца «Болоньезе» (30 см), Coca-cola (1 л.)',
+        'price': 9000,
+        'image': 'images/pizza2.png'
+    },
+    {
+        'name': 'Хачапури по-аджарски',
+        'description': 'Сыр «Моцарелла», сыр «Сулугуни», яйцо, сливки, сливочное масло',
+        'price': 3500,
+        'image': 'images/pizza3.png'
     }
 ]
 
     return render(request, 'menu.html', {
         'dishes': dishes,
-        'iftar_sets': iftar_sets
+        'iftar_sets': iftar_sets,
+        'pizza': pizza
     })
 
 
